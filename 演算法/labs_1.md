@@ -16,3 +16,40 @@
 
 ## 時間複雜度：
 - 堆積排序的平均和最壞情況時間複雜度均為 O(nlogn)
+
+Python 實作：
+Python
+
+def adjust(arr, i, n):
+    child = 2 * i
+    item = arr[i - 1]
+
+    while child <= n:
+        if child < n and arr[child - 1] < arr[child]:
+            child += 1
+
+        if item >= arr[child - 1]:
+            break
+
+        arr[(child // 2) - 1] = arr[child - 1]
+        child *= 2
+
+    arr[int(child // 2) - 1] = item
+
+def heapify(arr, n):
+    for i in range(int(n // 2), 0, -1):
+        adjust(arr, i, len(arr))
+
+def heapSort(arr, n):
+    heapify(arr, len(arr))
+
+    for i in range(n, 1, -1):
+        arr[i - 1], arr[0] = arr[0], arr[i - 1]
+        adjust(arr, 1, i - 1)
+
+    return arr
+
+# Example usage:
+arr = [5, 10, 2, 7, 1]
+sorted_arr = heapSort(arr, len(arr))
+print("排序後:", sorted_arr)
