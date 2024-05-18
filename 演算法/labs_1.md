@@ -18,7 +18,8 @@
 - 堆積排序的平均和最壞情況時間複雜度均為 O(nlogn)
 
 Python 實作：
-Python
+
+```python
 
 def adjust(arr, i, n):
     child = 2 * i
