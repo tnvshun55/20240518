@@ -49,7 +49,7 @@ def heapSort(arr, n):
 
     return arr
 
-# Example usage:
+Example usage:
 arr = [5, 10, 2, 7, 1]
 sorted_arr = heapSort(arr, len(arr))
 print("排序後:", sorted_arr)
