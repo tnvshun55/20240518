@@ -53,5 +53,6 @@ def heapSort(arr, n):
 arr = [5, 10, 2, 7, 1]
 sorted_arr = heapSort(arr, len(arr))
 print("排序後:", sorted_arr)
-
 ```
+
+## 執行結果
