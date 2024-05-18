@@ -56,4 +56,4 @@ print("排序後:", sorted_arr)
 ```
 
 ## 執行結果
-(heapsort)[heapsort.png]
+[heapsort](pics/heapsort.png)
