@@ -17,8 +17,7 @@
 ## 時間複雜度：
 - 堆積排序的平均和最壞情況時間複雜度均為 O(nlogn)
 
-Python 實作：
-
+## Python 實作：
 ```python
 
 def adjust(arr, i, n):
@@ -50,7 +49,9 @@ def heapSort(arr, n):
 
     return arr
 
-Example usage:
+#Example usage:
 arr = [5, 10, 2, 7, 1]
 sorted_arr = heapSort(arr, len(arr))
 print("排序後:", sorted_arr)
+
+```
